@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Just ToolTip</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=4, user-scalable=yes">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <div class="topDiv">
+        <h1>JustTooltip</h1>       
+    </div>
+
+    <div class="wrapper">        
+        <div class="tipDiv">
+            <ul>
+                <li><a href="#" data-placement="top" data-title="Tooltip to Top">Tooltip to Top</a></li>
+                <li><a href="#" data-placement="right" data-title="Tooltip to Right">Tooltip to Right</a></li>
+                <li><a href="#" data-placement="bottom" data-title="Tooltip to Bottom">Tooltip to Bottom</a></li>
+                <li><a href="#" data-placement="left" data-title="Tooltip to Left">Tooltip to Left</a></li>      
+            </ul>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="codeStructure">
+            <p>Add <b>style.css</b> to your head section</p>
+            <code> &lt;link rel="stylesheet" type="text/css" href="style.css"/&gt; </code>
+
+            <p>Use JQuery library. Minimum version shoule be of 1.4.0.</b></p>
+            <code> &lt;script src="jquery-3.2.1.min.js"&gt;&lt;/script&gt; </code>
+
+            <p>Add <b>Tooltip jquery</b> library</p>
+            <code> &lt;script src="jquery.tooltip.js"&gt;&lt;/script&gt; </code>
+
+            <p>Add below method to your custom code</p>
+            <code> $(document).ready(function(){<br>
+                    &nbsp; &nbsp; $('a[data-title]').tooltip();<br>
+                    });
+            </code>
+
+            <p>Add <b>data-title</b> with your anchor tag  and content which you want to show on tooltip.</p>
+            <code>&lt;a href='#' data-title='Your content'&gt;&lt;/a&gt;</code>
+            
+            <p>Choose your tooltip direction by using  <b>data-placement</b> with your anchor tag. You can use "left", "right", "top" and "bottom" for tooltip direction. top will be default direction.</p>
+            <code>&lt;a href='#' data-placement='right'&gt;&lt;/a&gt;</code>
+            
+        </div>         
+    </div>
+   
+<script src="jquery-3.2.1.min.js"></script>
+<script src="jquery.tooltip.js"></script> 
+<script src="custom.js"></script> 
+</body>
+</html>
